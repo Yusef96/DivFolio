@@ -1,0 +1,458 @@
+
+body{ 
+    background-color: #E0E0E0;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-color:#0078ff;
+}
+
+/* start-header */
+
+.nav-home{
+    position: relative;
+}
+.nav-home::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    /* bottom: 10%; */
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%);
+    
+}
+.nav-item{
+    /* transition: all 10s 2s; */
+    position: relative;
+}
+
+.nav-item::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    /* bottom: 15%; */
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.8s;
+
+}
+
+.nav-item:hover::after{
+
+width: 50%;
+}
+
+
+#home{
+    background-image: url(../img/intro-bg.jpg);
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+
+}
+
+
+
+.layer{
+    background-color: rgba(0, 0, 0, 0.6);
+
+
+}
+
+.layer h1{
+    font-size: 4.5rem;
+    
+}
+.layer h5{
+    font-size: 2.5rem;
+
+}
+
+.content h5::after{
+    content: " D";
+    animation-name:moveletters ;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes moveletters {
+    0% {content: " D";}
+    3% {content: " De";}
+    6% {content: " Dev";}
+    9% {content: " Deve";}
+    12% {content: " Devel";}
+    15% {content: " Develo";}
+    18% {content: " Develop";}
+    21% {content: " Develope";}
+    24% {content: " Developer";}
+    27% {content: " Develope";}
+    30% {content: " Develop";}
+    33% {content: " Develo";}
+    36% {content: " Devel";}
+    39% {content: " Deve";}
+    42% {content: " Dev";}
+    45% {content: " De";}
+    48% {content: " s";}
+    51% {content: " se";}
+    54% {content: " ses";}
+    57% {content: " sesi";}
+    60% {content: " sesig";}
+    63% {content: " sesign";}
+    66% {content: " sesigne";}
+    69% {content: " sesigner";}
+    72% {content: " sesigne";}
+    75% {content: " sesign";}
+    78% {content: " sesig";}
+    81% {content: " sesi";}
+    84% {content: " ses";}
+    87% {content: " se";}
+    90% {content: " s";}
+
+}
+
+
+
+/* end-header */
+
+
+
+
+/* start-about me-section */
+#about{
+    padding: 6rem;
+    color: #4e4e4e;
+}
+#about .col-md-6{
+    padding: 4rem 2rem;
+}
+
+
+
+.progress{
+    margin-bottom: 1.5rem;
+}
+
+.rating-label{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* end-about me-section */
+
+
+
+
+
+
+
+
+
+/* start-service */
+.section-title{
+    position: relative;
+}
+
+.section-title h3{
+    font-size: 3rem;
+}
+
+.section-title p::after {
+    content: "";
+    width: 5%;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.service-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.service-icon i{
+    font-size: 4rem;
+}
+
+
+
+
+.service-icon{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 10px solid #0078ff;
+    /* transform: translate(70%); */
+    transition: all 0.5s;
+}
+
+.service-icon:hover{
+    background-color: var(--main-color);
+    border: 10px solid #80aaff;
+    color: white;
+
+
+}
+
+/* end-service */
+
+
+/* start-number */
+#numbers{
+    background-image: url(../img/post-3.jpg);
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+    padding: 8rem;
+    position: relative;
+    /* height: 50vh; */
+
+}
+
+#numbers::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(115, 83, 201, 0.6);
+    /* background-color: teal; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+}
+
+
+#numbers .col-md-3{
+    z-index: 1;
+}
+
+
+.numbers-content i{
+    font-size: 4rem;
+}
+
+.numbers-icon i{
+    font-size: 2rem;
+}
+
+
+
+
+.numbers-icon{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 10px solid white;
+    /* transform: translate(90%); */
+    transition: all 0.5s;
+}
+
+/* end-number */
+
+
+/* start-portfolio */
+.card-group a{
+    text-decoration: none;
+}
+
+.port-content i{
+    font-size: 3rem;
+}
+
+
+.port-content .card img{
+        transition: all 1s;
+
+}
+.port-content .card:hover img {
+    transform: scale(1.5);
+
+
+}
+
+/* end-portfolio */
+
+
+/* start-comment */
+#comment{
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+    /* padding: 10rem; */
+    ;
+
+}
+
+.comment-layer{
+    background-color: rgba(53, 20, 146, 0.6);
+    height: 100vh
+
+
+
+}
+
+/* end-comment */
+
+
+
+/* start-blog */
+
+#blog .card {
+    /* background-color: green; */
+    position: relative;
+
+}
+
+
+.travel{
+    /* background-color: tomato; */
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+
+}
+
+.blog-content a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.blog-content a h5{
+    /* color: red; */
+    font-size: 1.5rem;
+}
+
+
+
+.card-footer{
+    background-color: #E0E0E0;
+
+}
+
+
+.card-footer img{ 
+    width: 3rem;
+}
+
+
+/* end-blog */
+
+
+/* start-contact */
+#contact{
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover ;
+    background-attachment: fixed;
+    padding: 8rem 0;
+    position: relative;
+    
+
+}
+
+#contact::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(115, 83, 201, 0.6);
+    /* background-color: teal; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+}
+
+.content-contact{
+    padding: 0rem 2rem;
+}
+
+.content-contact ul{
+    list-style: none;
+    padding: 0;
+}
+
+#contact .col-md-12{
+    z-index: 1;
+    
+
+}
+
+
+
+.icons-contact{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 3px solid #0078ff;
+}
+
+
+.send-message{
+    /* background-color: teal; */
+    /* transform: scale(1.1); */
+    /* padding: 4rem 1rem; */
+    /* height: 80%; */
+    position: relative;
+}
+
+
+.touch{
+    /* padding: 8rem 1rem; */
+    /* background-color: tomato; */
+    position: relative;
+}
+
+
+
+
+.send-message h2::after {
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    /* bottom: 25%; */
+    left: 12%;
+    top: 10%;
+    transform: translate(-50%);
+}
+
+.touch h2::after {
+    content: "";
+    width: 20%;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    /* bottom: 25%; */
+    left: 12%;
+    top: 10%;
+    transform: translate(-50%);
+}
+
+
+/* end-contact */
